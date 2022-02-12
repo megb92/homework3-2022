@@ -76,6 +76,7 @@ nav li a {
 }
 /* Requirement 2 code here*/
 nav li a:hover {
+  text-decoration: underline;
   text-decoration-style: wavy;
 }
 
