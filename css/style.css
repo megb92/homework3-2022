@@ -103,6 +103,8 @@ nav li a:focus {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   row-gap: 30px;
+  justify-items: center;
+  align-items: center;
 }
 
 /* Requirements 6-10 here: */
@@ -115,20 +117,21 @@ nav li a:focus {
   background-size: cover;
   min-height: 400px;
 }
-.text {
-  grid-column: 2 / 3;
-  max-height: 25vh;
-  overflow: scroll;
-  justify-content: center;
-}
-img {
-  width: 100%;
-}
 .about-image, .clients-image, .method-image, .contact-image {
   grid-column: 1 / span 3;
   max-height: 500px;
   overflow: hidden;
-  justify-items: center;
+  
+  
+}
+.text {
+  grid-column: 2 / 3;
+  max-height: 25vh;
+  overflow: scroll;
+  align-self: center;
+}
+img {
+  width: 100%;
 }
 .about-image {
   grid-row: 1 / 2;
@@ -168,7 +171,10 @@ a.skip:focus {
 .container {
   grid-template-columns: 50px auto 500px auto 50px;
   grid-template-rows: repeat(4, 300px);
-  row-gap: 10px;
+}
+.text {
+  align-self: center;
+  /* added sunday after autograder */
 }
 .about, .method, .clients-image, .contact-image {
   grid-column: 3 / span 2;
